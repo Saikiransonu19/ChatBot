@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHAT-BOT</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+</head>
+<body class="show-chatBot">
+    <button class="chatBot-toggler">
+         <span><i class="fa-regular fa-message"></i></span>
+            <span><i class="fa-solid fa-xmark"></i></span>
+    </button>
+        <div class="chatBot">
+            <header>
+                <h2>Chatbot</h2>
+                <span><i class="fa-solid fa-xmark"></i></span>
+            </header>
+            <ul class="chatBox">
+                <li class="chat incoming"><span><i class="fa-solid fa-robot"></i></span>
+                <p>Hi there 👋 <br> How can i help you today </p>
+               </li>
+               <!-- <li class="chat outgoing">
+                <p>what is the weather today ?</p>
+               </li> -->
+            </ul>
+            <div class="chat-input">
+                <textarea placeholder="Enter the message..." required></textarea>
+                <span id="send-btn"><i class="fa-solid fa-play"></i></span>
+            </div>
+        </div>
+        <script type="importmap">
+            {
+              "imports": {
+          "@google/generative-ai": "https://esm.run/@google/generative-ai"
+              }
+            }
+          </script>
+
+          <script type="module" src="script.js"></script>
+          
+</body>
+</html>
